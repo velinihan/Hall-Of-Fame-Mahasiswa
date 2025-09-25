@@ -5,21 +5,21 @@ CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – Kelompo
 - [#2 Naikan Font Size](https://github.com/velinihan/Hall-Of-Fame-Mahasiswa/issues/2)
 
 ## 2. Link Pull Request (Programmer)
-- [PR #7 – Menambahkan nama kelompok 3 di index.html](https://github.com/…/pull/7)
-- [PR #8 – Menambahkan tombol About Us](https://github.com/…/pull/8)
+- [PR #4 – Menambahkan file](https://github.com/velinihan/Hall-Of-Fame-Mahasiswa/commit/0ad607ea308c63b1a09b90d7cbd051f3be72a6aa)
+- [PR #5 – Mengedit file](https://github.com/velinihan/Hall-Of-Fame-Mahasiswa/commit/f1ddec27306ddece63dcb9f17c593bc27860d77e)
 
 ## 3. Screenshot Merge (Configuration Manager)
-- [Screenshot Merge PR #7](link-gambar)
-- [Screenshot Merge PR #8](link-gambar)
+- [Screenshot Merge PR #4](https://github.com/velinihan/Hall-Of-Fame-Mahasiswa/blob/main/Screenshot%202025-09-25%20at%2012.22.40.png)
+- [Screenshot Merge PR #5](https://github.com/velinihan/Hall-Of-Fame-Mahasiswa/blob/main/Screenshot%202025-09-25%20at%2012.23.06.png)
 
 ## 4. Laporan Audit (Auditor)
-- [Audit Report Kelompok X](link-ke-file-audit.md)
+- [Audit Report Kelompok 1](https://github.com/velinihan/Hall-Of-Fame-Mahasiswa/blob/main/Laporan%20Audit)
 
 ---
 
 ## Ringkasan Akhir
-- Total Issue dibuat: X
-- Total PR diajukan: Y
-- Total PR di-merge: Z
-- Pelanggaran prosedur: N
+- Total Issue dibuat: 2
+- Total PR diajukan: 2
+- Total PR di-merge: 2
+- Pelanggaran prosedur: 0
 - Rekomendasi Auditor: …
