@@ -1,11 +1,178 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hall of Fame Kelompok 1</title>
+  <style>
+    :root{
+      --card-bg:#fff;
+      --page-bg:#f5f7fa;
+      --muted:#6b7280;
+      --accent:#2563eb;
+      --radius:12px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:var(--page-bg);
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:40px;
+      color:#0f172a;
+    }
+    .container{
+      width:100%;
+      max-width:1100px;
+    }
+
+    h1{font-size:20px;margin:0 0 18px 0}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:18px;
+    }
+
+    .card{
+      background:var(--card-bg);
+      border-radius:var(--radius);
+      padding:16px;
+      box-shadow:0 6px 18px rgba(15,23,42,0.06);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+    }
+
+    .photo{
+      width:160px;
+      height:160px;
+      border-radius:10px;
+      background:linear-gradient(135deg,#e6eefc,#f3f7ff);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:var(--muted);
+      font-weight:600;
+      margin-bottom:12px;
+      border:2px dashed rgba(37,99,235,0.15);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .photo svg{width:60px;height:60px;opacity:0.85}
+
+    .name{font-weight:700;margin:6px 0 4px 0}
+    .hobby{font-size:13px;color:var(--muted);margin-bottom:8px}
+
+    .socials{
+      display:flex;
+      gap:10px;
+      margin-top:auto;
+    }
+
+    .socials a{
+      width:36px;height:36px;border-radius:8px;
+      display:inline-flex;align-items:center;justify-content:center;
+      text-decoration:none;background:#f3f4f6;border:1px solid rgba(15,23,42,0.03);
+    }
+    .socials a svg{width:18px;height:18px;display:block}
+
+    /* small note under the grid */
+    .note{font-size:13px;color:var(--muted);margin-top:14px}
+
+    @media (max-width:480px){
+      .photo{width:120px;height:120px}
+    }
+  </style>
 </head>
 <body>
-    
+  <div class="container">
+    <h1>Hall of Fame Kelompok 1</h1>
+
+    <div class="grid">
+      <!-- 7 cards -->
+      <div class="card">
+        <div class="photo" aria-hidden="true"><img src="foto/fadhi.jpeg" width="170px"></div>
+        <div class="name">Ezra Mangasi Andika Sibuea</div>
+        <div class="hobby">Hobi: Fotografi</div>
+        <div class="socials">
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22 5.75c-.66.3-1.37.5-2.12.6a3.7 3.7 0 0 0 1.62-2.05c-.73.43-1.52.74-2.37.9A3.7 3.7 0 0 0 12.5 7.2c0 .29.03.57.1.84A10.5 10.5 0 0 1 3.12 4.5a3.7 3.7 0 0 0 1.15 4.95 3.57 3.57 0 0 1-1.68-.46v.05c0 1.8 1.28 3.3 2.97 3.64a3.7 3.7 0 0 1-1.67.06c.47 1.46 1.84 2.53 3.46 2.56A7.44 7.44 0 0 1 2 19.54a10.5 10.5 0 0 0 5.67 1.66c6.8 0 10.53-5.6 10.53-10.46v-.48A7.4 7.4 0 0 0 22 5.75z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM18.5 6.1a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5a2.25 2.25 0 1 1 0 4.5 2.25 2.25 0 0 1 0-4.5zM3 9h4v11H3zM10 9h3.8v1.5h.1c.5-.9 1.8-1.8 3.7-1.8C21.5 8.7 22 11 22 14.2V20h-4v-5.2c0-1.3-.5-2.2-1.7-2.2-1 0-1.6.7-1.9 1.4-.1.2-.1.5-.1.8V20h-4V9z"/></svg></a>
+        </div>
+      </div>
+
+      <!-- reuse pattern for remaining 6 cards, change names/hobbies -->
+      <div class="card">
+        <div class="photo" aria-hidden="true"><img src="foto/fadhi.jpeg" width="170px"></div>
+        <div class="name">Fadhilla M. Wiryasukma</div>
+        <div class="hobby">Hobi: Memasak</div>
+        <div class="socials">
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22 5.75c-.66.3-1.37.5-2.12.6a3.7 3.7 0 0 0 1.62-2.05c-.73.43-1.52.74-2.37.9A3.7 3.7 0 0 0 12.5 7.2c0 .29.03.57.1.84A10.5 10.5 0 0 1 3.12 4.5a3.7 3.7 0 0 0 1.15 4.95 3.57 3.57 0 0 1-1.68-.46v.05c0 1.8 1.28 3.3 2.97 3.64a3.7 3.7 0 0 1-1.67.06c.47 1.46 1.84 2.53 3.46 2.56A7.44 7.44 0 0 1 2 19.54a10.5 10.5 0 0 0 5.67 1.66c6.8 0 10.53-5.6 10.53-10.46v-.48A7.4 7.4 0 0 0 22 5.75z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM18.5 6.1a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5a2.25 2.25 0 1 1 0 4.5 2.25 2.25 0 0 1 0-4.5zM3 9h4v11H3zM10 9h3.8v1.5h.1c.5-.9 1.8-1.8 3.7-1.8C21.5 8.7 22 11 22 14.2V20h-4v-5.2c0-1.3-.5-2.2-1.7-2.2-1 0-1.6.7-1.9 1.4-.1.2-.1.5-.1.8V20h-4V9z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="photo" aria-hidden="true"><img src="foto/shiro.jpeg" width="170px"></div>
+        <div class="name">Muhammad Fazlur Rahman</div>
+        <div class="hobby">Hobi: Olahraga</div>
+        <div class="socials">
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22 5.75c-.66.3-1.37.5-2.12.6a3.7 3.7 0 0 0 1.62-2.05c-.73.43-1.52.74-2.37.9A3.7 3.7 0 0 0 12.5 7.2c0 .29.03.57.1.84A10.5 10.5 0 0 1 3.12 4.5a3.7 3.7 0 0 0 1.15 4.95 3.57 3.57 0 0 1-1.68-.46v.05c0 1.8 1.28 3.3 2.97 3.64a3.7 3.7 0 0 1-1.67.06c.47 1.46 1.84 2.53 3.46 2.56A7.44 7.44 0 0 1 2 19.54a10.5 10.5 0 0 0 5.67 1.66c6.8 0 10.53-5.6 10.53-10.46v-.48A7.4 7.4 0 0 0 22 5.75z"/></svg></a>
+          <a href="https://www.instagram.com/mfrahman_?igsh=MTg0aWZ4ajMxcXVrNQ==" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM18.5 6.1a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5a2.25 2.25 0 1 1 0 4.5 2.25 2.25 0 0 1 0-4.5zM3 9h4v11H3zM10 9h3.8v1.5h.1c.5-.9 1.8-1.8 3.7-1.8C21.5 8.7 22 11 22 14.2V20h-4v-5.2c0-1.3-.5-2.2-1.7-2.2-1 0-1.6.7-1.9 1.4-.1.2-.1.5-.1.8V20h-4V9z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="photo" aria-hidden="true"><img src="foto/kucing.jpeg" width="170px"></div>
+        <div class="name">Arfian Ghifari Mahya</div>
+        <div class="hobby">Hobi: Membaca</div>
+        <div class="socials">
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22 5.75c-.66.3-1.37.5-2.12.6a3.7 3.7 0 0 0 1.62-2.05c-.73.43-1.52.74-2.37.9A3.7 3.7 0 0 0 12.5 7.2c0 .29.03.57.1.84A10.5 10.5 0 0 1 3.12 4.5a3.7 3.7 0 0 0 1.15 4.95 3.57 3.57 0 0 1-1.68-.46v.05c0 1.8 1.28 3.3 2.97 3.64a3.7 3.7 0 0 1-1.67.06c.47 1.46 1.84 2.53 3.46 2.56A7.44 7.44 0 0 1 2 19.54a10.5 10.5 0 0 0 5.67 1.66c6.8 0 10.53-5.6 10.53-10.46v-.48A7.4 7.4 0 0 0 22 5.75z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM18.5 6.1a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5a2.25 2.25 0 1 1 0 4.5 2.25 2.25 0 0 1 0-4.5zM3 9h4v11H3zM10 9h3.8v1.5h.1c.5-.9 1.8-1.8 3.7-1.8C21.5 8.7 22 11 22 14.2V20h-4v-5.2c0-1.3-.5-2.2-1.7-2.2-1 0-1.6.7-1.9 1.4-.1.2-.1.5-.1.8V20h-4V9z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="photo" aria-hidden="true"><img src="foto/kucing2.jpeg" width="170px"></div>
+        <div class="name">Velisia Nihan Rahmawati</div>
+        <div class="hobby">Hobi: Traveling</div>
+        <div class="socials">
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22 5.75c-.66.3-1.37.5-2.12.6a3.7 3.7 0 0 0 1.62-2.05c-.73.43-1.52.74-2.37.9A3.7 3.7 0 0 0 12.5 7.2c0 .29.03.57.1.84A10.5 10.5 0 0 1 3.12 4.5a3.7 3.7 0 0 0 1.15 4.95 3.57 3.57 0 0 1-1.68-.46v.05c0 1.8 1.28 3.3 2.97 3.64a3.7 3.7 0 0 1-1.67.06c.47 1.46 1.84 2.53 3.46 2.56A7.44 7.44 0 0 1 2 19.54a10.5 10.5 0 0 0 5.67 1.66c6.8 0 10.53-5.6 10.53-10.46v-.48A7.4 7.4 0 0 0 22 5.75z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM18.5 6.1a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5a2.25 2.25 0 1 1 0 4.5 2.25 2.25 0 0 1 0-4.5zM3 9h4v11H3zM10 9h3.8v1.5h.1c.5-.9 1.8-1.8 3.7-1.8C21.5 8.7 22 11 22 14.2V20h-4v-5.2c0-1.3-.5-2.2-1.7-2.2-1 0-1.6.7-1.9 1.4-.1.2-.1.5-.1.8V20h-4V9z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="photo" aria-hidden="true"><img src="foto/fadhi.jpeg" width="170px"></div>
+        <div class="name">Al Madinatul Munawara</div>
+        <div class="hobby">Hobi: Musik</div>
+        <div class="socials">
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22 5.75c-.66.3-1.37.5-2.12.6a3.7 3.7 0 0 0 1.62-2.05c-.73.43-1.52.74-2.37.9A3.7 3.7 0 0 0 12.5 7.2c0 .29.03.57.1.84A10.5 10.5 0 0 1 3.12 4.5a3.7 3.7 0 0 0 1.15 4.95 3.57 3.57 0 0 1-1.68-.46v.05c0 1.8 1.28 3.3 2.97 3.64a3.7 3.7 0 0 1-1.67.06c.47 1.46 1.84 2.53 3.46 2.56A7.44 7.44 0 0 1 2 19.54a10.5 10.5 0 0 0 5.67 1.66c6.8 0 10.53-5.6 10.53-10.46v-.48A7.4 7.4 0 0 0 22 5.75z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM18.5 6.1a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5a2.25 2.25 0 1 1 0 4.5 2.25 2.25 0 0 1 0-4.5zM3 9h4v11H3zM10 9h3.8v1.5h.1c.5-.9 1.8-1.8 3.7-1.8C21.5 8.7 22 11 22 14.2V20h-4v-5.2c0-1.3-.5-2.2-1.7-2.2-1 0-1.6.7-1.9 1.4-.1.2-.1.5-.1.8V20h-4V9z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="photo" aria-hidden="true"><img src="foto/ikan.jpeg" width="170px"></div>
+        <div class="name">Bintang Saputra</div>
+        <div class="hobby">Hobi: Desain</div>
+        <div class="socials">
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M22 5.75c-.66.3-1.37.5-2.12.6a3.7 3.7 0 0 0 1.62-2.05c-.73.43-1.52.74-2.37.9A3.7 3.7 0 0 0 12.5 7.2c0 .29.03.57.1.84A10.5 10.5 0 0 1 3.12 4.5a3.7 3.7 0 0 0 1.15 4.95 3.57 3.57 0 0 1-1.68-.46v.05c0 1.8 1.28 3.3 2.97 3.64a3.7 3.7 0 0 1-1.67.06c.47 1.46 1.84 2.53 3.46 2.56A7.44 7.44 0 0 1 2 19.54a10.5 10.5 0 0 0 5.67 1.66c6.8 0 10.53-5.6 10.53-10.46v-.48A7.4 7.4 0 0 0 22 5.75z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM18.5 6.1a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5a2.25 2.25 0 1 1 0 4.5 2.25 2.25 0 0 1 0-4.5zM3 9h4v11H3zM10 9h3.8v1.5h.1c.5-.9 1.8-1.8 3.7-1.8C21.5 8.7 22 11 22 14.2V20.h-4v-5.2c0-1.3-.5-2.2-1.7-2.2-1 0-1.6.7-1.9 1.4-.1.2-.1.5-.1.8V20h-4V9z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
