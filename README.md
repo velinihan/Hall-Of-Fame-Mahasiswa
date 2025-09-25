@@ -1,8 +1,8 @@
 CAK3BAB3 – IMPLEMENTASI DAN PENGUJIAN PERANGKAT LUNAK – IF-47-08 – Kelompok 1
 
 ## 1. Link Issue (Customer)
-- [#1 Membuat Link Media Sosial]([https://github.com/…/issues/3](https://github.com/velinihan/Hall-Of-Fame-Mahasiswa/issues/1))
-- [#2 Naikan Font Size](https://github.com/velinihan/Hall-Of-Fame-Mahasiswa/issues/2))
+- [#1 Membuat Link Media Sosial](https://github.com/velinihan/Hall-Of-Fame-Mahasiswa/issues/1)
+- [#2 Naikan Font Size](https://github.com/velinihan/Hall-Of-Fame-Mahasiswa/issues/2)
 
 ## 2. Link Pull Request (Programmer)
 - [PR #7 – Menambahkan nama kelompok 3 di index.html](https://github.com/…/pull/7)
